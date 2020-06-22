@@ -24,7 +24,7 @@ public class Item {
     }
     
     public int getTotalPrice(){
-        
+        // Chưa hoàn thành
         return 0;
     }
 
