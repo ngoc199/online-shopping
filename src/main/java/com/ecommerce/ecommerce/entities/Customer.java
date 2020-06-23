@@ -3,44 +3,36 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ecommerce.ecommerce;
+package com.ecommerce.ecommerce.entities;
 
 import java.util.Date;
+
+import com.ecommerce.ecommerce.entities.enums.UserRole;
+
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  *
  * @author hungv
  */
+
 public class Customer extends User {
+
+    @Getter
+    @Setter
     private Date dateOfBirth;
+
+    @Getter
+    @Setter
     private boolean gender;
-    
-    
+
     public Customer() {
+        super();
     }
 
-        
     public Customer(String username, String userPassword, String userEmail, String userPhone, UserRole userRole) {
         super(username, userPassword, userEmail, userPhone, userRole);
     }
 
-    public Date getDateOfBirth() {
-        return dateOfBirth;
-    }
-
-    public void setDateOfBirth(Date dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
-    }
-
-    public boolean getGender() {
-        return gender;
-    }
-
-    public void setGender(boolean gender) {
-        this.gender = gender;
-    }
-    
-    
-    
-    
 }
