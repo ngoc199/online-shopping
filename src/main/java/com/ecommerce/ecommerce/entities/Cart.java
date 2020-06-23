@@ -28,7 +28,7 @@ public class Cart {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "Cart ID")
     @Getter
-    private long cartID;
+    private Long cartID;
 
     @Getter
     @OneToOne(targetEntity = User.class, mappedBy = "User ID", cascade = CascadeType.ALL)

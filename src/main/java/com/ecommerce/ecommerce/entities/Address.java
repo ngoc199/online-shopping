@@ -31,7 +31,7 @@ public class Address {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "Address ID")
     @Getter
-    private long addressID;
+    private Long addressID;
 
     @Getter
     @ManyToOne(targetEntity = AddressBook.class, cascade = CascadeType.ALL)

@@ -33,7 +33,7 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "Order ID")
     @Getter
-    private long orderID;
+    private Long orderID;
 
     @Getter
     @Setter

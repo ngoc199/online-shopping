@@ -29,7 +29,7 @@ public abstract class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "User ID")
-    private long userID;
+    private Long userID;
 
     @Getter
     @Setter

@@ -28,7 +28,7 @@ public class AddressBook {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Getter
     @Column(name = "Address Book ID")
-    private long addressBookID;
+    private Long addressBookID;
 
     @Getter
     @OneToOne(targetEntity = User.class, mappedBy = "User ID", cascade = CascadeType.ALL)

@@ -29,7 +29,7 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "Product ID")
     @Getter
-    private long productID;
+    private Long productID;
 
     @ManyToOne(targetEntity = Category.class, cascade = CascadeType.ALL)
     @Getter
