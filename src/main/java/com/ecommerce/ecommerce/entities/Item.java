@@ -39,7 +39,7 @@ public class Item {
 
     @Getter
     @OneToOne(targetEntity = Order.class, mappedBy = "Order ID", cascade = CascadeType.ALL)
-    private long orderID;
+    private Order order;
 
     @Setter
     @Getter
